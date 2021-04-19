@@ -452,6 +452,12 @@ var irrelevant = (function (exports) {
   }
 
   function fetch(input, init) {
+    if (globalThis !== 'undefined') {
+      if ('fetch' in globalThis) {
+          return globalThis.fetch(input, init)
+      }
+    }
+
     return new Promise(function(resolve, reject) {
       var request = new Request(input, init);
 
