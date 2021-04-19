@@ -1,15 +1,12 @@
 {
-  "name": "@jcs224/cross-fetch-testing",
-  "version": "3.1.5",
+  "name": "jcs224-cross-fetch-testing",
+  "version": "3.1.6",
   "description": "Universal WHATWG Fetch API for Node, Browsers and React Native",
   "homepage": "https://github.com/lquixada/cross-fetch",
   "main": "dist/node-ponyfill.js",
   "browser": "dist/browser-ponyfill.js",
   "react-native": "dist/react-native-ponyfill.js",
   "types": "index.d.ts",
-  "scripts": {
-    "prepare": "husky install"
-  },
   "lint-staged": {
     "*.js": [
       "make build",
